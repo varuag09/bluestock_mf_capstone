@@ -25,4 +25,3 @@ for name, code in schemes.items():
     )
 
     print(f"{name} saved successfully")
-    
