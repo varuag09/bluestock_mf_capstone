@@ -1,24 +1,26 @@
+from pathlib import Path
+
+BASE_DIR = Path.cwd().parent
+
+DATA_RAW = BASE_DIR / "data" / "raw"
+DATA_PROCESSED = BASE_DIR / "data" / "processed"
+
+print(BASE_DIR)
+
+files = list(DATA_RAW.glob("*.csv"))
+print([f.name for f in files])
+
 import pandas as pd
-import os
 
-path = "../data/raw"
+for file in DATA_RAW.glob("*.csv"):
+    df = pd.read_csv(file)
 
-files = os.listdir(path)
+    print("=" * 50)
+    print(file.name)
 
-print(files)
+    print("Shape:", df.shape)
 
-for file in files:
-
-    df = pd.read_csv(f"{path}/{file}")
-
-    print("="*50)
-    print(file)
-
-    print("Shape:")
-    print(df.shape)
-
-    print("\nColumns:")
-    print(df.columns.tolist())
+    print("\nColumns:", df.columns.tolist())
 
     print("\nHead:")
     print(df.head())
