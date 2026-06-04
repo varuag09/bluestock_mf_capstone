@@ -90,3 +90,12 @@ COUNT(*) AS total_funds
 FROM fact_performance
 GROUP BY category
 ORDER BY total_funds DESC;
+
+-- 11. Fund count by fund house
+
+SELECT
+fund_house,
+COUNT(*) AS total_funds
+FROM dim_fund
+GROUP BY fund_house
+ORDER BY total_funds DESC;
