@@ -1,0 +1,28 @@
+file,columns,num_columns
+.\processed\alpha_beta.csv,"amfi_code, alpha, beta",3
+.\processed\cagr_report.csv,"amfi_code, cagr_1yr, cagr_3yr, cagr_5yr",4
+.\processed\fund_scorecard.csv,"amfi_code, cagr_3yr, sharpe_ratio, alpha, max_drawdown, expense_ratio_pct, return_rank, sharpe_rank, alpha_rank, expense_rank, drawdown_rank, fund_score",12
+.\processed\max_drawdown.csv,"amfi_code, max_drawdown",2
+.\processed\nav_history_clean.csv,"amfi_code, date, nav",3
+.\processed\returns_computed.csv,"amfi_code, annualized_return",2
+.\processed\scheme_performance_clean.csv,"amfi_code, scheme_name, fund_house, category, plan, return_1yr_pct, return_3yr_pct, return_5yr_pct, benchmark_3yr_pct, alpha, beta, sharpe_ratio, sortino_ratio, std_dev_ann_pct, max_drawdown_pct, aum_crore, expense_ratio_pct, morningstar_rating, risk_grade",19
+.\processed\sharpe_values.csv,"amfi_code, sharpe_ratio",2
+.\processed\sortino_values.csv,"amfi_code, sortino_ratio",2
+.\processed\tracking_error.csv,"amfi_code, tracking_error",2
+.\processed\transactions_clean.csv,"investor_id, transaction_date, amfi_code, transaction_type, amount_inr, state, city, city_tier, age_group, gender, annual_income_lakh, payment_mode, kyc_status",13
+.\raw\01_fund_master.csv,"amfi_code, fund_house, scheme_name, category, sub_category, plan, launch_date, benchmark, expense_ratio_pct, exit_load_pct, min_sip_amount, min_lumpsum_amount, fund_manager, risk_category, sebi_category_code",15
+.\raw\02_nav_history.csv,"amfi_code, date, nav",3
+.\raw\03_aum_by_fund_house.csv,"date, fund_house, aum_lakh_crore, aum_crore, num_schemes",5
+.\raw\04_monthly_sip_inflows.csv,"month, sip_inflow_crore, active_sip_accounts_crore, new_sip_accounts_lakh, sip_aum_lakh_crore, yoy_growth_pct",6
+.\raw\05_category_inflows.csv,"month, category, net_inflow_crore",3
+.\raw\06_industry_folio_count.csv,"month, total_folios_crore, equity_folios_crore, debt_folios_crore, hybrid_folios_crore, others_folios_crore",6
+.\raw\07_scheme_performance.csv,"amfi_code, scheme_name, fund_house, category, plan, return_1yr_pct, return_3yr_pct, return_5yr_pct, benchmark_3yr_pct, alpha, beta, sharpe_ratio, sortino_ratio, std_dev_ann_pct, max_drawdown_pct, aum_crore, expense_ratio_pct, morningstar_rating, risk_grade",19
+.\raw\08_investor_transactions.csv,"investor_id, transaction_date, amfi_code, transaction_type, amount_inr, state, city, city_tier, age_group, gender, annual_income_lakh, payment_mode, kyc_status",13
+.\raw\09_portfolio_holdings.csv,"amfi_code, stock_symbol, stock_name, sector, weight_pct, market_value_cr, current_price_inr, portfolio_date",8
+.\raw\10_benchmark_indices.csv,"date, index_name, close_value",3
+.\raw\Axis_Bluechip_NAV.csv,"date, nav",2
+.\raw\HDFC_Top100_NAV.csv,"date, nav",2
+.\raw\ICICI_Bluechip_NAV.csv,"date, nav",2
+.\raw\Kotak_Bluechip_NAV.csv,"date, nav",2
+.\raw\Nippon_Large_Cap_NAV.csv,"date, nav",2
+.\raw\SBI_Bluechip_NAV.csv,"date, nav",2
