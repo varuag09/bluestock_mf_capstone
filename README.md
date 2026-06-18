@@ -34,28 +34,41 @@ Bluestock-Mutual-Fund-Analytics/
 │   └── processed/
 │
 ├── notebooks/
-│   ├── Day1_EDA.ipynb
-│   ├── Day2_ETL.ipynb
-│   ├── Day3_Performance_Analytics.ipynb
-│   ├── Day4_Advanced_Analytics.ipynb
-│   ├── Day5_Dashboard.ipynb
-│   └── Day6_Capstone_Tasks.ipynb
+│   ├── 01_data_ingestion.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_eda_analysis.ipynb
+│   ├── 04_performance_analytics.ipynb
+│   └── 05_advanced_analytics.ipynb
 │
+├── scripts/
+│   ├── data_ingestion.py
+│   └── live_natch_fetch
+│
+├── sql/
+│   ├── queries.sql
+│   └── schema.sql
+│ 
 ├── dashboard/
-│   └── Mutual_Fund_Dashboard.pbix
+│   ├── bluestock_mf_dashboard.pbix
+│   ├── blestock_mf_dasboard.pdf
+│   ├── Industry_Overview.png
+│   ├── Fund_Performance.png
+│   ├── Investor_Analytics.png
+│   └── SIP_and_Market_Trend.png
 │
 ├── outputs/
 │   ├── var_cvar_report.csv
 │   ├── cohort_analysis.csv
 │   ├── sip_continuity.csv
-│   ├── recommendation.csv
-│   └── hhi_report.csv
+│   ├── sector_hhi.csv
+│   ├── sector_hhi_chart.png
+│   └── rolling_sharpe_chart.png
 │
 ├── report/
-│   └── Final_Report.pdf
+│   ├── Bluestock_MF_Capstone_Report.pdf
+│   ├── data_dictionary.md
+│   └── data_quality_report.md
 │
-├── requirements.txt
-├── run_pipeline.py
 └── README.md
 ```
 
